@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="css/app.css">
+    <style>
+h6 {
+    display: block;
+    font-size: .77em;
+    margin-top: 1.33em;
+    margin-bottom: 2.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="row align-center" style='margin-top: 50px;'>
+            <div class="small-6 columns">
+                <div class="callout secondary">
+
+                    <div class="row">
+                        <div class="small-12 columns">
+                         <!--   <h3>|**| TOP 8 STRAINS BY THC% |**|</h3> -->
+                            <table width="100%" id="js-output" class="js-table text-left">
+
+                                <thead>
+                                    <tr class="js-head-row">
+                                        <td>Strain</td>
+                                        <td width="100%">Price</td>
+                                    </tr>
+                                </thead>
+
+                                <tbody class="js-body-row">
+
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row align-center">
+                            <h6>THC %</h6>
+                        <div class="small-10 columns">
+
+                            <div class="slider js-slider" data-slider data-start="13" data-end="32" data-step="1">
+                                <span class="slider-handle" data-slider-handle role="slider" tabindex="1" aria-controls="slider1"></span>
+                                <span class="slider-fill" data-slider-fill></span>
+                            </div>
+                        </div>
+                        <div class="small-2 columns">
+
+                            <div class="b-percent-value">
+
+                                <input class="js-slider-value" type="text" id="slider1">
+                                <span class="b-percent-value__symb">%</span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
